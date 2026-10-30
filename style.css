@@ -3,3 +3,82 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  background-color: #e3f2fd;
+  padding: 40px 60px;
+  border-radius: 20px;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+li > button {
+  color: white;
+  background-color: #b93636;
+  font-family: "Ubuntu", sans-serif;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+li > button:hover {
+  background-color: #b93636ca;
+}
+
+li > button:active {
+  background-color: #b93636;
+}
+
+main > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.user-input {
+  font-family: "Ubuntu", sans-serif;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.add-btn {
+  color: white;
+  background-color: #55e07e;
+  font-family: "Ubuntu", sans-serif;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #55e07fc8;
+}
+
+.add-btn:active {
+  background-color: #55e07e;
+}
+
+ul {
+  font-size: 0.9rem;
+}
