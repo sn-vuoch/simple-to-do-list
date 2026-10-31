@@ -7,7 +7,6 @@ addBtn.addEventListener("click", () => {
   const userInputValue = userInput.value;
 
   if (!userInputValue || !userInputValue.trim()) {
-    console.log("Hello");
     userInput.value = "Can't be empty texts";
     return;
   }
@@ -17,10 +16,19 @@ addBtn.addEventListener("click", () => {
   const buttonElem = document.createElement("button");
   const paraElem = document.createElement("p");
 
+  buttonElem.classList.add("delete-btn");
+
   paraElem.textContent = userInput.value;
   buttonElem.textContent = "Delete";
 
   listParent.appendChild(listElem);
   listElem.appendChild(paraElem);
   listElem.appendChild(buttonElem);
+});
+
+// Delete Button Event
+listParent.addEventListener("click", (e) => {
+  if (e.target.matches(".delete-btn")) {
+    e.target.parentElement.remove();
+  }
 });
